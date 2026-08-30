@@ -44,6 +44,14 @@ const userSchema=mongoose.Schema({
         type:String,
         default:"https://i.sstatic.net/l60Hf.png"
     },
+    resetPasswordToken:{
+        type:String,
+        default:null,
+    },
+    resetPasswordExpires:{
+        type:Date,
+        default:null,
+    },
 
 },{timestamps:true});
 
